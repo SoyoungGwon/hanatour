@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css"> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+	<link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<title>하나투어 모바일</title>
+</head>
+
+<body>
+
+<header>
+	<div class="header_title">
+		<div class="menu"><a id="side_btn" href="#"><p>전체메뉴</p></a></div>
+		<div class="logo"><a href="#"><img src="images/btn_hnt_logo.png"></a></div>
+		<div class="search"><a href="#">통합검색</a></div>
+		<div class="my"><a href="#">나의 마이홈 메뉴</a></div>
+	</div>
+</header>
+<nav>
+    <div class="swiper-container menu_swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide on"><a href="#">홈</a></div>
+          <div class="swiper-slide"><a href="#">패키지</a></div>
+          <div class="swiper-slide"><a href="#">항공</a></div>
+          <div class="swiper-slide"><a href="#">호텔</a></div>
+          <div class="swiper-slide"><a href="#">프리미엄</a></div>
+          <div class="swiper-slide"><a href="#">테마여행</a></div>
+          <div class="swiper-slide"><a href="#">국내여행</a></div>
+          <div class="swiper-slide"><a href="#">여행정보</a></div>
+          <div class="swiper-slide last"></div>
+        </div>
+        <div class="more"><a href="#">more</a></div>
+    </div>
+
+    <div class="menu_box navmenu_close">
+        <ul>
+            <li class="on"><a href="#">홈</a></li>
+            <li><a href="#">패키지</a></li>
+            <li><a href="#">항공</a></li>
+            <li><a href="#">호텔</a></li>
+            <li><a href="#">프리미엄</a></li>
+            <li><a href="#">테마여행</a></li>
+            <li><a href="#">국내여행</a></li>
+            <li><a href="#">여행정보</a></li>
+            <li><a class="gray" href="#">슈퍼세이브 &gt;</a></li>
+            <li><a class="gray" href="#">추천기획전 &gt;</a></li>
+            <li><a class="br" href="#">해외입장권&amp;<br>교통패스</a></li>
+        </ul>
+    </div>
+
+	<div id="nav_side" class="overlay sidemenu_close">
+  		<div class="overlay-content">
+    		<div class="side_header">
+    			<p>전체메뉴</p>
+    			<div class="side_close">
+    				<a id="side_closebtn" href="#" class="closebtn"></a>
+    			</div>
+    		</div>
+    		<div class="side_menu side1">
+    			<div class="side_title">
+    				<img src="images/icon1.png"><p>해외 패키지여행</p>
+					<div class="side1_right">
+						<a href="">
+    					<img class="left" src="images/left1.png">인천공항<br><b>혜택모음</b><img class="right" src="images/ico_rarr.png">
+    				</a>
+					</div>
+    				
+    			</div>
+    			<div>
+    				<ul>
+    					<li><a href="">하나팩</a></li>
+    					<li class="br"><a href="">하나팩<br>프리미엄</a></li>
+    					<li class="br"><a href="">제우스월드<br>[럭셔리여행]</a></li>
+    					<li><a href="">태마여행</a></li>
+    					<li><a href="">허니문</a></li>
+    					<li><a href="">골프</a></li>
+    					<li><a href="">크루즈</a></li>
+    					<li><a href="">레포츠</a></li>
+    					<li><a href="">트레킹</a></li>
+    					<li><a href="">전시회</a></li>
+    					<li><a href="">성지순례</a></li>
+    					<li></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="side_menu side2">
+    			<div class="side_title">
+    				<img src="images/side2.png"><p>해외 자유여행</p>
+					<div class="side2_right">
+						<a href="">
+    					<img class="left" src="images/left2.png">해외나갈 땐<br><b>포켓와이파이</b><img class="right" src="images/ico_rarr.png">
+    				</a>
+					</div>
+    				
+    			</div>
+    			<div>
+    				<ul>
+    					<li><a href="">항공</a></li>
+    					<li><a href="">호텔</a></li>
+    					<li><a href="">에어텔/자유여행</a></li>
+    					<li><a href="">배낭여행</a></li>
+    					<li><a href="">현지투어</a></li>
+    					<li><a href="">유럽패스</a></li>
+    					<li><a href="">해외랜터카</a></li>
+    					<li><a href="">패스/입장권</a></li>
+    					<li><a href="">유럽구간열차</a></li>
+    					<li><a href="">Global Flight</a></li>
+    					<li></li>
+    					<li></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="side_menu side3">
+    			<div class="side_title">
+    				<img src="images/side3.png"><p>국내여행</p>
+    			</div>
+    			<div>
+    				<ul>
+    					<li><a href="">국내항공</a></li>
+    					<li><a href="">국내숙박</a></li>
+    					<li><a href="">내륙여행</a></li>
+    					<li><a href="">제주여행</a></li>
+    					<li><a href="">내나라여행</a></li>
+    					<li><a href="">렌터카</a></li>
+    					<li><a href="">골프여행</a></li>
+    					<li><a href="">기차여행만들기</a></li>
+    					<li><a href="">제주여행만들기</a></li>
+    					<li><a href="">내나라골프</a></li>
+    					<li><a href="">국내여행만들기</a></li>
+    					<li><a href="">입장권</a></li>
+    					<li><a href="">실시간 골프부킹</a></li>
+    					<li></li>
+    					<li></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="side_menu side4">
+    			<div class="side_title">
+    				<img src="images/side4.png"><p>여행정보</p>
+    			</div>
+    			<div>
+    				<ul>
+    					<li><a href="">여행정보홈</a></li>
+    					<li><a href="">인기여행도시</a></li>
+    					<li><a href="">전문가여행기</a></li>
+    					<li><a href="">테마여행동영상</a></li>
+    					<li><a href="">오디오가이드</a></li>
+    					<li><a href="">인포그래픽</a></li>
+    					<li><a href="">날씨환율시차</a></li>
+    					<li><a href="">가이드북/맵북</a></li>
+    					<li></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="side_menu side5">
+    			<div class="side_title">
+    				<img src="images/side5.png"><p>기획전/이벤트</p>
+    			</div>
+    			<div>
+    				<ul>
+    					<li><a href="">슈퍼세이브</a></li>
+    					<li><a href="">이달의 추천여행지</a></li>
+    					<li><a href="">추천 기획전</a></li>
+    					<li><a href="">이벤트</a></li>
+    					<li></li>
+    					<li></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="side_menu side6">
+    			<div class="side_title">
+    				<img src="images/side6.png"><p>쿠폰/혜택</p>
+    			</div>
+    			<div>
+    				<ul>
+    					<li><a href="">쿠폰</a></li>
+    					<li><a href="">면세점 혜택</a></li>
+    					<li><a href="">인청공항 혜택모음</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="side_menu side7">
+    			<div class="side_title">
+    				<img src="images/side7.png"><p>연계서비스</p>
+    			</div>
+    			<div>
+    				<ul>
+    					<li><a href="">공연/전시</a></li>
+    					<li><a href="">여행용품샵</a></li>
+    					<li><a href="">비자신청</a></li>
+    					<li><a href="">트레블웹진</a></li>
+    					<li><a href="">기업출장/단체</a></li>
+    					<li><a href="">포켓와이파이</a></li>
+    					<li><a href="">단체맞춤여행</a></li>
+    					<li><a href=""></a></li>
+    					<li><a href=""></a></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="side_menu side8">
+    			<div class="side_title">
+    				<img src="images/side8.png"><p>하나투어 SNS</p>
+    			</div>
+    			<div>
+    				<ul>
+    					<li><a href="">페이스북</a></li>
+    					<li><a href="">인스타그램</a></li>
+    					<li><a href="">블로그</a></li>
+    					<li><a href="">카카오스토리</a></li>
+    					<li><a href="">플러스친구</a></li>
+    					<li><a href="">유튜브</a></li>
+    					<li><a href="">트위터</a></li>
+    					<li><a href=""></a></li>
+    					<li><a href=""></a></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="app">
+    			<p>하나투어 모바일앱</p>
+    			<ul>
+    				<li><a href=""><img src="images/app1.png">하나투어 항공</a></li>
+    				<li><a href=""><img src="images/app2.png">하나투어 호텔</a></li>
+    				<li><a href=""><img src="images/app3.png">하나 Free</a></li>
+    				<li><a href=""><img src="images/app4.png">하나투어 국내숙박</a></li>
+    			</ul>
+    		</div>
+    		<div class="sidebanner">
+    			<div class="sidebanner1">
+    				<img src="images/sidebanner1.jpg" alt="">
+    			</div>
+    			<div class="sidebanner2">
+    				<img src="images/sidebanner2.jpg" alt="">
+    			</div>
+    		</div>
+  		</div>
+	</div>
+</nav>
+<section>
+    <div class="swiper-container image_swiper">
+	    <div class="swiper-wrapper">
+	      <div class="swiper-slide"><img src="images/slide1.jpg"></div>
+	      <div class="swiper-slide"><img src="images/slide2.jpg"></div>
+	      <div class="swiper-slide"><img src="images/slide3.jpg"></div>
+	      <div class="swiper-slide"><img src="images/slide4.jpg"></div>
+	      <div class="swiper-slide"><img src="images/slide5.jpg"></div>
+	      <div class="swiper-slide"><img src="images/slide6.jpg"></div>
+	      <div class="swiper-slide"><img src="images/slide7.jpg"></div>
+	    </div>
+    <!-- Add Pagination -->
+    <div class="page-area"><div class="swiper-pagination"></div></div>
+  </div>
+	<div class="icons">
+		<ul>
+			<li class="icon1"><a href="#">패키지</a></li>
+			<li class="icon2"><a href="#">항공</a></li>
+			<li class="icon3"><a href="#">호텔</a></li>
+			<li class="icon4"><a href="#">에어텔</a></li>
+			<li class="icon5"><a class="br" href="#">프리미엄<br>패키지</a></li>
+			<li class="icon6"><a href="#">허니문</a></li>
+			<li class="icon7"><a href="#">골프</a></li>
+			<li class="icon8"><a class="br" href="#">현지투어<br>패스/입장권</a></li>
+			<li class="icon9"><a href="#">여행정보</a></li>
+			<li class="icon10"><a href="#">면세점 혜택</a></li>
+			<li class="icon11"><a href="#">공연/전시</a></li>
+			<li class="icon12"><a href="#">전체보기</a></li>
+		</ul>
+	</div>
+	<div class="line"></div>
+	<div class="banner1"><a href="#"><img src="images/banner1.jpg"></a></div>
+	<div class="banner2"><a href="#"><img src="images/banner2.jpg"></a></div>
+</section>
+<footer>
+	<div class="fmenu">
+		<a href="#">로그인</a>
+		<a href="#">PC버전</a>
+		<a href="#">TOP<img src="images/bg_footop.png"></a>
+	</div>
+	<div class="info">
+		<p class="agree"><a href="#">이용약관</a> | <a href="#"><b>개인정보처리방침</b></a>
+		| <a href="#">여행약관</a> | <a href="#">사업자정보확인</a>	</p>
+		<p>(주) 하나투어 | 대표자: 김진국 | 사업자등록번호 : 102-81-39440</p>
+		<p>통신판매업신고번호 : 종로01-1806호 | 개인정보 보호책임자 : 박영학</p>
+		<p>[03161]서울특별시 종로구 인사동 5길 41</p>
+		<p>하나투어상담센터 : 1577-1233 | FAX : 02-734-0392</p>
+		<p>이메일 : <a class="mail" href="#">15771233@hanatour.com</a> | 호스팅 서비스 사업자 : (주) 하나투어</p>
+		<p>관광사업자 등록번호 : 제1993-000006호 | 영업보증보험 : 22억 1천만원 가입</p>
+		<p>COPYRIGHT ⓒ HANATOUR SERVICE INC. ALL RIGHT RESERVED</p>
+	</div>
+</footer>
+<script src="js/jquery-1.12.4.min.js" type="text/javascript"></script>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.menu_swiper', {
+      slidesPerView: 6,
+      spaceBetween: 0,
+      pagination: {
+        clickable: true,
+      },
+    });
+
+    var swiper = new Swiper('.image_swiper', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    $("#side_btn").click(function(){
+        $(".overlay").addClass("sidemenu_open").removeClass("sidemenu_close");
+        $("body").addClass("sidemenu_open_body");
+    });
+
+    $("#side_closebtn").click(function(){
+        $(".overlay").addClass("sidemenu_close").removeClass("sidemenu_open");
+        $("body").removeClass("sidemenu_open_body");
+    });
+
+    $(".more").click(function(){
+        if($(".menu_box").hasClass("navmenu_close")){
+            $(".menu_box").addClass("navmenu_open").removeClass("navmenu_close");
+            $(".more > a").css("background-image","url(images/btn_head_nav2.png)");
+        }
+        else{
+            $(".menu_box").addClass("navmenu_close").removeClass("navmenu_open");
+            $(".more > a").css("background-image","url(images/btn_head_nav.png)");
+        }          
+    });
+
+
+</script>
+</body>
+
+</html>
